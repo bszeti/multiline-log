@@ -27,3 +27,9 @@ Run with the default Spring profile to use logging pattern defined in applicatio
 Run with the _logback-pattern_ Spring profile to use logback-pattern.xml:
 
  mvn -Dspring.profiles.active=logback-pattern clean spring-boot:run
+
+Use _fabric8_ maven profile to deploy on OpenShift:
+
+ mvn -P fabric8 -DskipTests clean install
+
+This is designed to run in OpenShift. See _run.sh_ with the small perl script that converts back '\r' to line ending if you want to try on localhost.
