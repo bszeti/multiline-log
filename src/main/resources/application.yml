@@ -1,0 +1,10 @@
+#Enable access to all endpoints
+endpoints.enabled: true
+management.security.enabled: false
+
+greeting:
+  message: "Hello %s from application.yaml!"
+
+#With oc client CR doesn't look good, so need to convert it back to LF:
+#oc logs -f multiline-log-9-sflkm | perl -pe 's/\R/\n/g'
+logging.pattern.console: "YAML-%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %-40.40logger{39}: %replace(%m%wEx){'\\n','\r'}%nopex%n"
