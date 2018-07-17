@@ -46,6 +46,6 @@ public class GreetingController {
     public void postConstruct() throws Exception{
         log.info("Log pattern: {};", new ObjectMapper().writeValueAsString(pattern));
         log.info("Init GreetingController with message:\n{}",greeting);
-        log.info("Log exception",new Exception("test"));
+        log.error("Log exception",new Exception("test"));
     }
 }
