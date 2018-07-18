@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.openshift.booster.service;
+package my.company.multilinelog.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.openshift.booster;
+package my.company.multilinelog;
 
 import com.jayway.restassured.RestAssured;
 import org.junit.Before;
@@ -30,7 +30,7 @@ import static org.hamcrest.core.Is.is;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class BoosterApplicationTest {
+public class ApplicationTest {
 
     @Value("${local.server.port}")
     private int port;
