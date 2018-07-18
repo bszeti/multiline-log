@@ -147,28 +147,6 @@
     </plugins>
   </build>
 
-  <!-- Run with "-P fabric8" to enable OpenShift deployment -->
-  <!--<profiles>-->
-    <!--<profile>-->
-      <!--<id>fabric8</id>-->
-      <!--<build>-->
-        <!--<plugins>-->
-          <!--<plugin>-->
-            <!--<groupId>io.fabric8</groupId>-->
-            <!--<artifactId>fabric8-maven-plugin</artifactId>-->
-            <!--<executions>-->
-              <!--<execution>-->
-                <!--<goals>-->
-                  <!--<goal>resource</goal>-->
-                  <!--<goal>build</goal>-->
-                  <!--<goal>deploy</goal>-->
-                <!--</goals>-->
-              <!--</execution>-->
-            <!--</executions>-->
-          <!--</plugin>-->
-        <!--</plugins>-->
-      <!--</build>-->
-    <!--</profile>-->
-  <!--</profiles>-->
+
 
 </project>
