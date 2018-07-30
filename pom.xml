@@ -28,7 +28,6 @@
     <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>2.20.1</maven-surefire-plugin.version>
     <spring-boot-plugin.version>1.5.13.RELEASE</spring-boot-plugin.version>
-    <fabric8.maven.plugin.version>3.1.80</fabric8.maven.plugin.version>
     <logstash-logback-encoder.version>5.1</logstash-logback-encoder.version>
   </properties>
 
@@ -103,11 +102,6 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
           <version>${spring-boot-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>io.fabric8</groupId>
-          <artifactId>fabric8-maven-plugin</artifactId>
-          <version>${fabric8.maven.plugin.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
