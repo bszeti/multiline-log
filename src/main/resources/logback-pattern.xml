@@ -5,7 +5,7 @@
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>XML-%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %-40.40logger{39}: %replace(%m%wEx){'\n','&#x000D;'}%nopex%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p XML %-40.40logger{39}: %replace(%m%wEx){'\n','&#x000D;'}%nopex%n</pattern>
         </encoder>
     </appender>
     <root level="info">
