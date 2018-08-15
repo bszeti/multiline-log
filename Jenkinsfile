@@ -52,23 +52,6 @@ if (utils.isCD()) {
       }
       setupScript?.setupEnvironmentPost(envStage)
     }
-
-    stage('Approve') {
-      approve {
-        room = null
-        version = canaryVersion
-        environment = 'Stage'
-      }
-    }
-    
-    stage('Rollout to Run') {
-      unstash stashName
-      setupScript?.setupEnvironmentPre(envProd)
-      apply {
-        environment = envProd
-      }
-      setupScript?.setupEnvironmentPost(envProd)
-    }
   }
 }
 
